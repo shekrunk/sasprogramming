@@ -1,0 +1,8 @@
+DATA Fibonacci;
+Do i =1 to 10;
+Fib = Sum(Fib, lag(Fib));
+if i = 1 then Fib =1;
+output;
+end;
+PROC PRINT Fibonacci;
+Run;
