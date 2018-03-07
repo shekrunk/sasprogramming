@@ -1,0 +1,9 @@
+DATA LoopWithWhile;
+SUM=0;
+VAR=1; 
+Do While(VAR<15);
+SUM = SUM + VAR;
+VAR+1;
+END;
+PROC PRINT DATA = LoopWithWhile;
+Run;
