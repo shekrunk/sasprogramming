@@ -1,0 +1,7 @@
+DATA LoopWithIndex;
+SUM=0;
+Do VAR = 1 to 10;
+SUM = SUM + VAR;
+END;
+PROC PRINT DATA = LoopWithIndex;
+Run;
